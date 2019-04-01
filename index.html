@@ -6,12 +6,13 @@
 </head>
 <body>
   <script>
-      let a = parseInt(prompt("Nhap so tuoi", ''));
-      if(a<15){
-          alert("Ban khong du dieu kien de vao lop 10");
+      let a = parseInt(prompt("Nhap so", ''));
+      if(a<0){
+          document.write(a + "nho hon so 0");
       }else {
-          alert("Ban du dieu kien vao lop 10");
-      }
+              document.write(a + "lon hon so 0");
+          }
+
   </script>
 </body>
 </html>
