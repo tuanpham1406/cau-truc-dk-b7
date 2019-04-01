@@ -6,12 +6,16 @@
 </head>
 <body>
   <script>
-      let a = parseInt(prompt("Nhap so", ''));
-      if(a<0){
-          document.write(a + "nho hon so 0");
-      }else {
-              document.write(a + "lon hon so 0");
-          }
+      let a = parseInt(prompt("Nhap so a", ''));
+      let b = parseInt(prompt("Nhap so b", ''));
+      let c = parseInt(prompt("Nhap so c", ''));
+      if(a>b && a>c){
+          alert('so lon nhat la :' + a);
+      }else if(a<b && b<c){
+              alert('so lon nhat la :' + c);
+          }else{
+          alert('so lon nhat la :' + b);
+      }
 
   </script>
 </body>
