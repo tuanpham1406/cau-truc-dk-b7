@@ -6,20 +6,23 @@
 </head>
 <body>
   <script>
-      let a = parseInt(prompt("Nhap doanh so ban hang la ", ''));
-      let b = a/100;
-      let c = (a*2)/100;
-      let d = (a*3)/100;
-      if(a>=1000000 && a<5000000){
-          alert('hoa hong nhan duoc la ' + b);
-      } else if (a>=5000000 && a<=10000000){
-          alert('hoa hong nhan duoc la ' + c);
-      } else if(a>10000000){
-          alert('hoa hong nhan duoc la ' +d);
-      }else{
-          alert('Ban nhap sai du lieu');
+      let H = parseInt(prompt("Nhập số giờ thời gian đã gọi ", ''));
+      let M = parseInt(prompt("Nhập số phút thời gian đã gọi ", ''));
+      let S = parseInt(prompt("Nhập số giây thời gian đã gọi ", ''));
+      let Tong = H*60*60 + M*60 + S;
+      //gia su cuoc goi la 600 dong mot phut
+      let a = Tong*10;
+      let b = Tong*10 - Tong/100;
+      let c = Tong*10 - (Tong*2)/100;
+      if(Tong<1200 && Tong>0){
+          alert('cước điện thoại của bạn là ' + a);
+      } else if(Tong>=1200 && Tong<=2400){
+          alert('cước điện thoại của bạn là ' + b);
+      } else if(Tong>2400){
+          alert('cước điện thoại của bạn là ' +c);
+      }else {
+          alert('Bạn đã nhập sai dữ liệu');
       }
-
   </script>
 </body>
 </html>
